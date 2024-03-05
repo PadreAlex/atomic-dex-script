@@ -13,9 +13,9 @@ function App() {
    window.getitAdScript.renderAdPlugin(
       {
         apiKey:
-          "JoIBr3NRNYImiL8qaRxlxXFaMjvxoaCBMN1OiAvKNYyclky8WixRnScHjLNPIZrANfMpvZvcepsWbjXbH9YxOeul17siKT9poug56wFmxlaLi3Xh2IYQoq167MYaPFbJ",
+          "DhoFm82C6XN2bbs3tnuGTIVF3IHedbNhYl5dqoCZVrrKajMePFbpLUZtd4LO17xbh36NjLbNZynbvri3OzOwiMfwJIjVH20Le2QdhS71QEpxJ71Hj7zZf1M1r0qbaZCx",
         walletConnected: "",
-        slotId: "0",
+        slotId: "1",
       },
       "adContainer"
     );

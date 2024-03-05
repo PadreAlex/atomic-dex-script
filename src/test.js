@@ -12,7 +12,7 @@ const getitAdScript = {
     getImage: async (params, isMobile) => {
         const ts = Date.now().toString();
         const api_key = getitAdScript.encryptApi(params.apiKey, 26);
-        const response = await fetch("https://v1.getittech.io/v1/ads/get_ad", {
+        const response = await fetch("https://stg.getittech.io/v1/ads/get_ad", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -33,7 +33,7 @@ const getitAdScript = {
     generateUrl: async (params, campaign_uuid, banner_uuid) => {
         const ts = Date.now().toString();
         const api_key = getitAdScript.encryptApi(params.apiKey, 26);
-        await fetch("https://v1.getittech.io/v1/utm/event", {
+        await fetch("https://stg.getittech.io/v1/utm/event", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
