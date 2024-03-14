@@ -8,17 +8,17 @@ import { MetaMaskConnector } from "wagmi/connectors/metaMask";
 import { useState, useEffect } from "react";
 function App() {
   useEffect(() => {
-    var loadScript = function (src) {
-      var tag = document.createElement("script");
+    const loadScript = function (src) {
+      let tag = document.createElement("script");
       tag.async = false;
       tag.src = src;
       tag.id = "adScript";
-      var body = document.getElementsByTagName("body")[0];
+      let body = document.getElementsByTagName("body")[0];
       body.appendChild(tag);
     };
 
     loadScript(
-      "https://cdn.jsdelivr.net/gh/Getit-Tech/getit-script@main/getit-script-experimental.js"
+      "https://cdn.jsdelivr.net/gh/Getit-Tech/getit-script@test-version/getit-script-experimental.js"
     );
     document.getElementById("adScript").addEventListener("load", () => {
       window.getitAdScript.renderAdPlugin(
